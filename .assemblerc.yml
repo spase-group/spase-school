@@ -3,7 +3,7 @@
 # =============================================
 
 root:              docs
-shoulder:			
+shoulder:			/spase-school
 dest:              <%= site.root %>
 public:            <%= site.dest %>/public
 
