@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!--
+  Base template that defines navigation/footers etc. 
+ -->
+<html>
+
+  <head>
+    <title>SPASE School: What</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/base.css">
+    <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="/assets/css/ie6.css" />
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="/assets/css/ie7.css" />
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/assets/css/print.css" media="print">
+    <link rel="shortcut icon" href="/assets/images/icons/tag.gif" type="image/gif">
+    <script type="text/javascript" src="/assets/js/tutor.js"></script>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="author" content="Todd King">
+  </head>
+
+  <body id="body">
+    <div id="layout">
+        <div id="header">
+          <a href="index.html" id="logo" title="Click for the Home Page">
+          	<span class="tutor">Click to go to the home page.</span>
+          </a>
+          <div id="trail" class="blank"></div>
+          <div class="controls">
+            <span id="tutor">Hi. I'm your tutor.</span>
+			<!--
+            <a href="#" class="menu show" onclick="fullscreen_off(); return false" title="Show Menu">
+              <span class="tutor">Click to view the menu of all tutorials.</span>
+            </a>
+            <a href="#" class="menu hide" onclick="fullscreen_on();  return false" title="Hide Menu">
+              <span class="tutor">Click to hide the menu and go full screen.</span>
+            </a>
+			-->
+          </div>
+          <h1 class="headline">What is SPASE</h1>
+        </div>
+        <div id="page">
+
+<!-- TOC -->
+<!-- Sidebar with menu -->
+<div id="sidebar">
+   <div class="menu">
+      <ul class="menu">
+      	<li name="about" class="l0 first"><a href="/" >About<span class="tutor">Learn more about SPASE and the available tutorials.</span></a></li>
+		<li name="intro" class="l0"><a href="/intro.html" >What is SPASE<span class="tutor">An introduction to SPASE and the SPASE Data Model.</span></a></li>
+		<li class="l0"><a href="/docs">Documentation<span class="tutor">A guide to the available documentation from SPASE.</span></a></li>
+			<li name="dictionary" class="l1"><a href="/docs/dictionary.html" >Dictionary<span class="tutor">The dictionary defines all the terms used in SPASE models</span></a></li>
+			<li name="model" class="l1"><a href="/docs/model.html" >Metadata Model<span class="tutor">The Metadata Model defines the specification for how to create resource descriptions.</span></a></li>
+			<li name="schema" class="l1"><a href="/docs/schema.html" >XML Schema<span class="tutor">The XML Schema documents define the metadata model for use in XML documents.</span></a></li>
+		<li name="tutorial" class="l0"><a href="/tutorials" >Tutorials<span class="tutor">Step-by-step instructions on how to write, validate and use resource descriptions.</span></a></li>
+			<li name="what" class="l1"><a href="/tutorials/what.html" >What is a Resource<span class="tutor">Discover what a Resource is in the world of SPASE.</span></a></li>
+			<li name="resourceid" class="l1"><a href="/tutorials/resourceid.html" >Creating a Resource ID<span class="tutor">How to create a resource identifier (ID) for a new reosurce description.</span></a></li>
+			<li name="you" class="l1"><a href="/tutorials/you.html" >You as a Resource<span class="tutor">Create your first resource description by describing yourself.</span></a></li>
+			<li name="finding" class="l1"><a href="/tutorials/finding.html" >Finding a Resource<span class="tutor">Find existing resource descriptions so you don't have to do everything from scratch.</span></a></li>
+			<li name="data" class="l1"><a href="/tutorials/data.html" >Describing Data Resources<span class="tutor">Learn how to describe a data resource.</span></a></li>
+			<li name="attribution" class="l1"><a href="/tutorials/attribution.html" >Giving Credit<span class="tutor">Acknowledging the work of others is an important part of science. Learn how to give proper credit.</span></a></li>
+			<li name="validate" class="l1"><a href="/tutorials/validate.html" >Validating a Description<span class="tutor">Learn how to use tools to validate a resource description.</span></a></li>
+		<li name="connect" class="l0 last"><a href="/connect.html" >Connect with others<span class="tutor">Connect with others in the SPASE community.</span></a></li>
+      </ul>
+      <div class="foot"></div>
+   </div>
+</div>
+
+
+		
+<!-- Body -->
+
+ <div id="content">
+ <div class="section">
+   <div class="head">
+     <h1 id="contents" onclick="switch_section(this)">Contents</h1>
+   </div>
+   <div class="body">
+     <ul class="toc">
+         <li class=""><a href="#Introduction">Introduction</a></li>
+          <li class=""><a href="#Model">Metadata Model</a></li>
+         <li class=""><a href="#Services">Services and Protocols</a></li>
+         <li class=""><a href="#Participants">Consortium Participants</a></li>
+     </ul>
+   </div>
+ </div>
+ 
+ <div class="pod">
+	<div class="section">
+	  <div class="head">
+		<h1 id="Introduction">Introduction</h1>
+		<a href="#body" class="top" title="Back up to the top of the page" >Top</a>
+	  </div><!-- End of head -->
+	  <div class="body">
+		<p>
+			The SPASE (Space Physics Archive Search and Extract) Data Model is a set of terms and values
+			along with the relationships between them that allow describing all the resources in a heliophysics
+			data environment. It is the result of many years of effort by an international collaboration (see
+			http://spase-group.org) to unify and improve on existing Space and Solar Physics data models. The
+			intent of this Data Model is to provide the means to describe resources, most importantly
+			scientifically useful data products, in a uniform way so they may be easily registered, found,
+			accessed, and used.
+		</p>
+		<p>
+			The SPASE data model divides the heliophysics data environment into a limited set of resources
+			types. A key resource type is Numerical Data. This type of resource typically consists of a set of
+			files containing values of one or more physical variables and that differ from each other only by
+			the time span. To full describe a Numerical Data resource requires other types of Resources,
+			namely Observatory, Instrument, Person, and Repository, whose names are self-explanatory, and
+			each of which has its own set of attributes. Often, numerical data are presented in prepared
+			images (gif or jpeg), and such presentations are referred to as Display Data resources. The other
+			data related resource types are Catalog which are lists of events; Annotation which enable expert
+			comments on data products; and Granule which describe individual files within another resource
+			(i.e., Numerical Data, Display Data or Catalog). Other types of resources include Document
+			which can contain narratives or supporting information; Service that provide software to use data
+			resources; Repository for storage locations; and Registry for metadata collections. Resource
+			descriptions and the links in them are intended to make the Resource useful to scientific users.
+		</p>
+	  </div><!-- End of body -->
+	</div><!-- End of section -->
+	
+    <div class="section">
+      <div class="head">
+        <h1 id="Model">Metadata Model</h1>
+        <a href="#body" class="top" title="Back up to the top of the page" >Top</a>
+      </div>
+      <div class="body">
+        <p>
+			The SPASE Data Model will only be described briefly here. The document defining the SPASE Data Model as well
+			as supporting information about it may be found at the <a href="http://spase-group.org/data">SPASE web site</a>. The model is broken down into a number of
+			main elements known as Resource Types, each defining a main topic of data description. The Resource Types are
+			presently:
+			</p>
+			<p>
+			<dl>
+				<dt>Annotation</dt><dd>Explanatory or descriptive information that is associated with another resource.</dd>
+				<dt>Catalog</dt><dd>Listing of events or observational notes.</dd>
+				<dt>Document</dt><dd>Plain or formatted text that may include graphics, sound, other multimedia data, or hypermedia references.</dd>
+				<dt>Display Data</dt><dd>A graphical representation of data.</dd>
+				<dt>Numerical Data</dt><dd>Data product stored as numerical values in a specified format.</dd>
+				<dt>Granule</dt><dd>An accessible portion of another resource.</dd>
+				<dt>Instrument</dt><dd>A device that is used to sense and parameterize a physical phenomenon.</dd>
+				<dt>Observatory</dt><dd>The host (spacecraft, network, facility) for instruments making observations.</dd>
+				<dt>Person</dt><dd>An individual human being.</dd>
+				<dt>Registry</dt><dd>A location or facility where resources are catalogued.</dd>
+				<dt>Repository</dt><dd>A location or facility where resources are stored.</dd>
+				<dt>Service</dt><dd>A location or facility that can perform a well-defined task.</dd>
+			</dl>
+		</p>
+		<p>
+			Each of these elements is broken down into sub-elements that provide sufficient detail for adequate description of data
+			sets. The Resource Types Numerical Data, Display Data and Catalogue are the resources used to describe
+			Heliophysics data products. These data product descriptions reference the other resources which contain descriptions
+			of the observatories, instruments, people, etc. that created the data products. The resources are described using the
+			terms from the SPASE Data Dictionary presented in the Data Model document.        
+		</p>
+
+	  </div><!-- End of body -->
+	</div><!-- End of section -->
+    <div class="section">
+      <div class="head">
+        <h1 id="Services">Services and Protocols</h1>
+        <a href="#body" class="top" title="Back up to the top of the page" >Top</a>
+      </div>
+      <div class="body">
+        <p>
+           SPASE provides a number of services and protocols which work with SPASE descriptions (XML documents that conform to the SPASE metadata schema).
+           Here are those available from the SPASE Group web site.
+        </p>
+        <p>
+<dl>
+        <dt><a href="http://www.spase-group.org/registry">SMWG Registry</a></dt><dd>A metadata registry containing descriptions common entities. This includes descriptions of observatories, instruments, persons, registries and services.</dd>
+<dt><a href="http://www.spase-group.org/tools/editor/editor.jsp">Editor</a></dt><dd> The web SPASE XML editor can be used to create or alter SPASE XML descriptions.</dd>
+<dt><a href="http://www.spase-group.org/tools/validate/">Validator</a></dt><dd>A web based validator for SPASE XML documents. Use it to determine compliance with any version of the SPASE metadata model.</dd>
+<dt><a href="http://www.spase-group.org/tools/registry/">SPASE Registry Server</a></dt><dd>The SPASE Registry Server is a web application written in Java which providers resolver, search, render and download services for SPASE XML resource descriptions. You can use it to set-up your own SPASE based virtual observatory.</dd>
+</dl>
+        </p>
+	  </div><!-- End of body -->
+	</div><!-- End of section -->
+  <div class="section">
+     <div class="head">
+       <h1 id="Participants">Consortium Participants</h1>
+       <a href="#body" class="top" title="Back up to the top of the page" >Top</a>
+     </div>
+     <div class="body">
+       <p>
+        Many people from a wide range of organizations have participated in the SPASE consortium. The origanizations include:
+        <ul>
+          <li>Augsburg College</li>
+          <li>California Institute of Technology (CalTech)</li>
+          <li>Centre de Donnees de la Physique des Plasmas (CDPP)</li>
+          <li>Istituto Nazionale di Astrofisica (INAF)</li>
+          <li>Japan Aerospace eXploration Agency (JAXA) - STP/Ehime</li>
+          <li>Japan's Inter-university Upper atmosphere Global Observation NETwork (IUGONET)</li>
+          <li>Jet Propulsion Laboratory (JPL)</li>
+          <li>John Hopkins University/Applied Physics Laboratory (JHU/APL)</li>
+          <li>George Mason University</li>
+          <li>Goddard Space Flight Center (GSFC)</li>
+          <li>National Aeronautics and Space Administration (NASA) HQ</li>
+          <li>National Oceanic and Atmospheric Administration (NOAA)</li>
+          <li>NOAA's National Geophysics Data Center (NGDC)</li>
+          <li>Rutherford Appleton Laboratory (RAL)</li>
+          <li>Stanford University</li>
+          <li>Southwest Research Institute (SwRI)</li>
+          <li>University of California, Los Angeles (UCLA)</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+
+   
+   </div> <!-- end of page -->
+        <div id="footer">
+          <div class="controls">
+          </div>
+
+          <div class="copyright">
+            Space Physics Archive Search and Extract (SPASE)
+          </div>
+          <div class="licence">
+            SPASE is an open international consortium. Tools and examples are provided under individual licenses. 
+            Please refer to the individual license for how you can redistribute and/or modify source.
+          </div>
+        </div>
+    </div>
+    <div id="preload">  
+	  <span class="logo"></span>
+      <span class="tab"></span>
+      <span class="hide"></span>
+      <span class="show"></span>
+      <span class="arrow1"></span>
+      <span class="arrow2"></span>
+      <span class="ext"></span>
+      <span class="talk"></span>
+      <span class="menu"></span>
+      <span class="menu_head"></span>
+      <span class="menu_foot"></span>
+      <span class="top"></span>
+      <span class="dotminus1"></span>
+      <span class="dotminus2"></span>
+      <span class="dotplus1"></span>
+    </div>
+</body>
+
+</html>

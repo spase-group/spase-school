@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<!--
+  Base template that defines navigation/footers etc. 
+ -->
+<html>
+
+  <head>
+    <title>SPASE School: Describing Data Resources</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/base.css">
+    <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="/assets/css/ie6.css" />
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="/assets/css/ie7.css" />
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/assets/css/print.css" media="print">
+    <link rel="shortcut icon" href="/assets/images/icons/tag.gif" type="image/gif">
+    <script type="text/javascript" src="/assets/js/tutor.js"></script>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="author" content="Todd King">
+  </head>
+
+  <body id="body">
+    <div id="layout">
+        <div id="header">
+          <a href="index.html" id="logo" title="Click for the Home Page">
+          	<span class="tutor">Click to go to the home page.</span>
+          </a>
+          <div id="trail" class="blank"></div>
+          <div class="controls">
+            <span id="tutor">Hi. I'm your tutor.</span>
+			<!--
+            <a href="#" class="menu show" onclick="fullscreen_off(); return false" title="Show Menu">
+              <span class="tutor">Click to view the menu of all tutorials.</span>
+            </a>
+            <a href="#" class="menu hide" onclick="fullscreen_on();  return false" title="Hide Menu">
+              <span class="tutor">Click to hide the menu and go full screen.</span>
+            </a>
+			-->
+          </div>
+          <h1 class="headline">SPASE Tutorial - Describing Data Resource</h1>
+        </div>
+        <div id="page">
+
+<!-- TOC -->
+<!-- Sidebar with menu -->
+<div id="sidebar">
+   <div class="menu">
+      <ul class="menu">
+      	<li name="about" class="l0 first"><a href="/" >About<span class="tutor">Learn more about SPASE and the available tutorials.</span></a></li>
+		<li name="intro" class="l0"><a href="/intro.html" >What is SPASE<span class="tutor">An introduction to SPASE and the SPASE Data Model.</span></a></li>
+		<li class="l0"><a href="/docs">Documentation<span class="tutor">A guide to the available documentation from SPASE.</span></a></li>
+			<li name="dictionary" class="l1"><a href="/docs/dictionary.html" >Dictionary<span class="tutor">The dictionary defines all the terms used in SPASE models</span></a></li>
+			<li name="model" class="l1"><a href="/docs/model.html" >Metadata Model<span class="tutor">The Metadata Model defines the specification for how to create resource descriptions.</span></a></li>
+			<li name="schema" class="l1"><a href="/docs/schema.html" >XML Schema<span class="tutor">The XML Schema documents define the metadata model for use in XML documents.</span></a></li>
+		<li name="tutorial" class="l0"><a href="/tutorials" >Tutorials<span class="tutor">Step-by-step instructions on how to write, validate and use resource descriptions.</span></a></li>
+			<li name="what" class="l1"><a href="/tutorials/what.html" >What is a Resource<span class="tutor">Discover what a Resource is in the world of SPASE.</span></a></li>
+			<li name="resourceid" class="l1"><a href="/tutorials/resourceid.html" >Creating a Resource ID<span class="tutor">How to create a resource identifier (ID) for a new reosurce description.</span></a></li>
+			<li name="you" class="l1"><a href="/tutorials/you.html" >You as a Resource<span class="tutor">Create your first resource description by describing yourself.</span></a></li>
+			<li name="finding" class="l1"><a href="/tutorials/finding.html" >Finding a Resource<span class="tutor">Find existing resource descriptions so you don't have to do everything from scratch.</span></a></li>
+			<li name="data" class="l1"><a href="/tutorials/data.html" >Describing Data Resources<span class="tutor">Learn how to describe a data resource.</span></a></li>
+			<li name="attribution" class="l1"><a href="/tutorials/attribution.html" >Giving Credit<span class="tutor">Acknowledging the work of others is an important part of science. Learn how to give proper credit.</span></a></li>
+			<li name="validate" class="l1"><a href="/tutorials/validate.html" >Validating a Description<span class="tutor">Learn how to use tools to validate a resource description.</span></a></li>
+		<li name="connect" class="l0 last"><a href="/connect.html" >Connect with others<span class="tutor">Connect with others in the SPASE community.</span></a></li>
+      </ul>
+      <div class="foot"></div>
+   </div>
+</div>
+
+
+		
+<!-- Body -->
+
+
+<div id="content">
+   <div class="section">
+    <div class="head">
+      <h1 id="contents" onclick="switch_section(this)">Contents</h1>
+    </div>
+    <div class="body">
+      <ul class="toc">
+        <li class=""><a href="#person">What is a Data Resource</a></li>
+        <li class=""><a href="#basic">Basic Data Description</a></li>
+        <li class=""><a href="#granule">Basic Granule Description</a></li>
+        <li class=""><a href="#useful">A More Usefule Data Description</a></li>
+      </ul>
+     </div> <!-- End of Body -->
+   </div> <!-- End of Section -->
+ 
+  <div class="pod">
+    <div class="section">
+      <div class="head">
+        <h1 id="person">What is a Data Resource</h1>
+        <a href="#body" class="top" title="Back up to the top of the page" >Top</a>
+      </div>
+      <div class="body">
+        <p>
+           A data resource is any digital resource which contains recorded observations, derived quantities
+           or interpretations. There are three types of data resources: Catalog, NumericalData and DisplayData.
+           The information to describe each type of data resource is very similiar. At a minimum a data resource 
+           description associates a resource identifier to the resource, provides an overview and conveys how 
+           to access a resource. A data resource description can also details for the parameters contained in 
+           the resource and may include hints as to how to render the data.
+         </p>
+         <p>
+         	The general model of a data resource is that it consists of a set of one or more files that contain
+         	data which is obtained from a common source and has a uniform structure to its contents. The data resource
+         	description is for the collection and individual files (units of data) in the collection are described 
+         	as Granules. Each Granule is associated with the data resource description and inherits all of its attributes.
+         </p>
+         <p>
+         	For example, suppose there is data from a magnetometer on a observatory called "MagProbe-1". Data was collected 
+         	for a full year with the data collected each day stored in separate files. In this case there would be a
+         	NumericalData description for the entire collection and 365 Granule descriptions for file.
+         </p>
+         <p>
+         	A web based resource description editor is available at <a target="_blank" href="http://spase-group.org/tools/xmleditor/base/">http://spase-group.org/tools/xmleditor/base/</a>
+         </p>
+     </div> <!-- End of Body -->
+   </div> <!-- End of Section -->
+
+    <div class="section">
+      <div class="head">
+        <h1 id="basic">Basic Data Description</h1>
+        <a href="#body" class="top" title="Back up to the top of the page" >Top</a>
+      </div>
+      <div class="body">
+        <p>
+        	Using the "MagProbe-1" example the basic NumericalData resource description would be:
+        	<pre class="code">
+&lt;Spase>
+   &lt;NumericalData>
+      &lt;ResourceID>spase://Example/NumericalData/MagProbe-1/Mag/PT1D&lt;/ResourceID>
+      &lt;ResourceHeader>
+         &lt;ResourceName>MagProbe-1 Magnetometer Data&lt;ResourceName>
+         &lt;ReleaseDate>2011-03-16T00:00:00&lt;ReleaseDate>
+         &lt;Description>Data obtained form the MagProbe-1 Magenetometer for the full year&lt;Description>
+         &lt;Contact>
+            &lt;PersonID>spase://Example/Person/P.I.Researcher&lt;/PersonID>
+            &lt;Role>PrincipalInvestigator&lt;Role>
+         &lt;Contact>
+      &lt;/ResourceHeader>
+      &lt;AccessInformation>
+         &lt;AccessURL>
+            &lt;URL>http://magprobe.host.org/magprobe-1/mag/data&lt;URL>
+         &lt;/AccessURL>
+      &lt;/AccessInformation>
+      &lt;MeasurementType>MagneticField&lt;MeasurementType>
+   &lt;/NumericalData>
+&lt;/Spase>
+        	</pre>
+         </p>
+     </div> <!-- End of Body -->
+   </div> <!-- End of Section -->
+   
+   <div class="section">
+      <div class="head">
+        <h1 id="basic">Basic Granule Description</h1>
+        <a href="#body" class="top" title="Back up to the top of the page" >Top</a>
+      </div>
+      <div class="body">
+        <p>
+        	A Granule description for a file might be:
+        	<pre class="code">
+&lt;Spase>
+   &lt;Granule&gt;
+      &lt;ResourceID&gt;spase://Example/NumericalData/MagProbe-1/Mag/PT1D/2011001&lt;/ResourceID&gt;
+      &lt;ReleaseDate&gt;2011-03-16T00:00:00&lt;/ReleaseDate&gt;
+      &lt;ParentID>spase://Example/NumericalData/MagProbe-1/Mag/PT1D&lt;/ParentID>
+      &lt;StartDate&gt;2011-01-01T00:00:00&lt;/StartDate&gt;
+      &lt;StopDate&gt;2011-01-01T24:00:00&lt;/StopDate&gt;
+      &lt;Source&gt;
+         &lt;SourceType&gt;Data&lt;/SourceType&gt;
+         &lt;URL>http://magprobe.host.org/magprobe-1/mag/data/2011001.dat&lt;URL>
+      &lt;/Source&gt;
+   &lt;/Person&gt;
+&lt;/Spase>
+</pre>
+Note: The ParentID refers to the NumericalData resource description for the collection.
+         </p>
+     </div> <!-- End of Body -->
+   </div> <!-- End of Section -->
+
+    <div class="section">
+      <div class="head">
+        <h1 id="useful">A More Useful Data Description</h1>
+        <a href="#body" class="top" title="Back up to the top of the page" >Top</a>
+      </div>
+      <div class="body">
+        <p>
+        	While the basic data description enables the discovery and retrieval of a data resource, 
+        	it does not provide any information as to the contents of data granules. 
+        	This can be provided by describing the parameters stored in the data granules.
+        	
+        	In SPASE a Parameter is a named data series within the data granules. 
+        	A Parameter may be a scalar or multi-dimensional. 
+        	The SPASE model of data storage is that the values of a parameter can be retrieved
+        	(using access software) if given a name or ParameterKey. This is commonly true for
+        	most self-documented data storage formats. However, data stored as plain text or comma
+        	separated values may lack a self-documented feature. In this case, SPASE has defined 
+        	a method of expressing a ParameterKey to allow direct interpretation of the plain text 
+        	file (see <a target="_blank" href="http:/spase-group.org/docs/conventions">http://spase-group.org/docs/conventions</a>.
+        </p>
+        <p>
+        	A basic Parameter description for a magnetic field vector (x, y, z) with a ParameterKey name of "field" is:
+<pre class="code">
+&lt;Parameter>
+   &lt;Name>Magnetic Field&lt;Name>
+   &lt;ParameterKey>Field&lt;ParameterKey>
+   &lt;Field>
+      &lt;FieldQuantity>Magnetic&lt;/FieldQuantity>
+   &lt;Field>
+&lt;/Parameter>
+</pre>
+If the format of the data files is a time stamp and a magnetic field vector then the complete NumericalData 
+resource description for the the MagProbe-1 example would be:
+<pre class="code">
+&lt;Spase>
+   &lt;NumericalData>
+      &lt;ResourceID>spase://Example/NumericalData/MagProbe-1/Mag/PT1D&lt;/ResourceID>
+      &lt;ResourceHeader>
+         &lt;ResourceName>MagProbe-1 Magnetometer Data&lt;ResourceName>
+         &lt;ReleaseDate>2011-03-16T00:00:00&lt;ReleaseDate>
+         &lt;Description>Data obtained form the MagProbe-1 Magenetometer for the full year&lt;Description>
+         &lt;Contact>
+            &lt;PersonID>spase://Example/Person/P.I.Researcher&lt;/PersonID>
+            &lt;Role>PrincipalInvestigator&lt;Role>
+         &lt;Contact>
+      &lt;/ResourceHeader>
+      &lt;AccessInformation>
+         &lt;AccessURL>
+            &lt;URL>http://magprobe.host.org/magprobe-1/mag/data&lt;URL>
+         &lt;/AccessURL>
+      &lt;/AccessInformation>
+      &lt;MeasurementType>MagneticField&lt;MeasurementType>
+      &lt;Parameter>
+         &lt;Name>Time&lt;Name>
+         &lt;ParameterKey>Time&lt;ParameterKey>
+         &lt;Support>
+            &lt;SupportQuantity>Temporal&lt;/SupportQuantity>
+         &lt;Support>
+      &lt;/Parameter>
+      &lt;Parameter>
+         &lt;Name>Magnetic Field&lt;Name>
+         &lt;ParameterKey>Field&lt;ParameterKey>
+         &lt;Field>
+            &lt;FieldQuantity>Magnetic&lt;/FieldQuantity>
+         &lt;Field>
+      &lt;/Parameter>
+   &lt;/NumericalData>
+&lt;/Spase>
+</pre>
+Much more detail can be provided in a resource description. 
+See the <a target="_blank" href="http://spase-group.org/data/model">Data Model reference</a> for a complete list.
+      </div> <!-- End of Body -->
+    </div> <!-- End of Section -->
+
+  </div> <!-- End of POD -->
+</div> <!-- End of Content -->
+
+
+   
+   </div> <!-- end of page -->
+        <div id="footer">
+          <div class="controls">
+          </div>
+
+          <div class="copyright">
+            Space Physics Archive Search and Extract (SPASE)
+          </div>
+          <div class="licence">
+            SPASE is an open international consortium. Tools and examples are provided under individual licenses. 
+            Please refer to the individual license for how you can redistribute and/or modify source.
+          </div>
+        </div>
+    </div>
+    <div id="preload">  
+	  <span class="logo"></span>
+      <span class="tab"></span>
+      <span class="hide"></span>
+      <span class="show"></span>
+      <span class="arrow1"></span>
+      <span class="arrow2"></span>
+      <span class="ext"></span>
+      <span class="talk"></span>
+      <span class="menu"></span>
+      <span class="menu_head"></span>
+      <span class="menu_foot"></span>
+      <span class="top"></span>
+      <span class="dotminus1"></span>
+      <span class="dotminus2"></span>
+      <span class="dotplus1"></span>
+    </div>
+</body>
+
+</html>

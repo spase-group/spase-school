@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--
+  Base template that defines navigation/footers etc. 
+ -->
+<html>
+
+  <head>
+    <title>SPASE School: You as a Resource</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/base.css">
+    <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="/assets/css/ie6.css" />
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="/assets/css/ie7.css" />
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/assets/css/print.css" media="print">
+    <link rel="shortcut icon" href="/assets/images/icons/tag.gif" type="image/gif">
+    <script type="text/javascript" src="/assets/js/tutor.js"></script>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="author" content="Todd King">
+  </head>
+
+  <body id="body">
+    <div id="layout">
+        <div id="header">
+          <a href="index.html" id="logo" title="Click for the Home Page">
+          	<span class="tutor">Click to go to the home page.</span>
+          </a>
+          <div id="trail" class="blank"></div>
+          <div class="controls">
+            <span id="tutor">Hi. I'm your tutor.</span>
+			<!--
+            <a href="#" class="menu show" onclick="fullscreen_off(); return false" title="Show Menu">
+              <span class="tutor">Click to view the menu of all tutorials.</span>
+            </a>
+            <a href="#" class="menu hide" onclick="fullscreen_on();  return false" title="Hide Menu">
+              <span class="tutor">Click to hide the menu and go full screen.</span>
+            </a>
+			-->
+          </div>
+          <h1 class="headline">SPASE Tutorial - You as a Resource</h1>
+        </div>
+        <div id="page">
+
+<!-- TOC -->
+<!-- Sidebar with menu -->
+<div id="sidebar">
+   <div class="menu">
+      <ul class="menu">
+      	<li name="about" class="l0 first"><a href="/" >About<span class="tutor">Learn more about SPASE and the available tutorials.</span></a></li>
+		<li name="intro" class="l0"><a href="/intro.html" >What is SPASE<span class="tutor">An introduction to SPASE and the SPASE Data Model.</span></a></li>
+		<li class="l0"><a href="/docs">Documentation<span class="tutor">A guide to the available documentation from SPASE.</span></a></li>
+			<li name="dictionary" class="l1"><a href="/docs/dictionary.html" >Dictionary<span class="tutor">The dictionary defines all the terms used in SPASE models</span></a></li>
+			<li name="model" class="l1"><a href="/docs/model.html" >Metadata Model<span class="tutor">The Metadata Model defines the specification for how to create resource descriptions.</span></a></li>
+			<li name="schema" class="l1"><a href="/docs/schema.html" >XML Schema<span class="tutor">The XML Schema documents define the metadata model for use in XML documents.</span></a></li>
+		<li name="tutorial" class="l0"><a href="/tutorials" >Tutorials<span class="tutor">Step-by-step instructions on how to write, validate and use resource descriptions.</span></a></li>
+			<li name="what" class="l1"><a href="/tutorials/what.html" >What is a Resource<span class="tutor">Discover what a Resource is in the world of SPASE.</span></a></li>
+			<li name="resourceid" class="l1"><a href="/tutorials/resourceid.html" >Creating a Resource ID<span class="tutor">How to create a resource identifier (ID) for a new reosurce description.</span></a></li>
+			<li name="you" class="l1"><a href="/tutorials/you.html" >You as a Resource<span class="tutor">Create your first resource description by describing yourself.</span></a></li>
+			<li name="finding" class="l1"><a href="/tutorials/finding.html" >Finding a Resource<span class="tutor">Find existing resource descriptions so you don't have to do everything from scratch.</span></a></li>
+			<li name="data" class="l1"><a href="/tutorials/data.html" >Describing Data Resources<span class="tutor">Learn how to describe a data resource.</span></a></li>
+			<li name="attribution" class="l1"><a href="/tutorials/attribution.html" >Giving Credit<span class="tutor">Acknowledging the work of others is an important part of science. Learn how to give proper credit.</span></a></li>
+			<li name="validate" class="l1"><a href="/tutorials/validate.html" >Validating a Description<span class="tutor">Learn how to use tools to validate a resource description.</span></a></li>
+		<li name="connect" class="l0 last"><a href="/connect.html" >Connect with others<span class="tutor">Connect with others in the SPASE community.</span></a></li>
+      </ul>
+      <div class="foot"></div>
+   </div>
+</div>
+
+
+		
+<!-- Body -->
+
+
+<div id="content">
+   <div class="section">
+    <div class="head">
+      <h1 id="contents" onclick="switch_section(this)">Contents</h1>
+    </div>
+    <div class="body">
+      <ul class="toc">
+        <li class=""><a href="#person">What is a Person Resource</a></li>
+        <li class=""><a href="#example">Example</a></li>
+        <li class=""><a href="#create">Create One for You</a></li>
+      </ul>
+     </div> <!-- End of Body -->
+   </div> <!-- End of Section -->
+ 
+  <div class="pod">
+    <div class="section">
+      <div class="head">
+        <h1 id="person">What is a Person Resource</h1>
+        <a href="#body" class="top" title="Back up to the top of the page" >Top</a>
+      </div>
+      <div class="body">
+        <p>
+           One of the simpliest resources to describe is a <a taget="_blank" href="http://spase-group.org/data/search.jsp?term=Person&style=entry">Person</a>. 
+           A <a target="_blank" href="http://spase-group.org/data/search.jsp?term=Person&style=entry">Person</a> resource can be
+           used to describe any individual or group of individuals. This includes an organization
+           such as a research group, institute or university.
+           The only required elements for a <a taget="_blank" href="http://spase-group.org/data/search.jsp?term=Person&style=entry">Person</a> 
+           resource are a resource ID and an organization name.
+           Often, other elements are included in order to provide a more complete description.
+         </p>
+     </div> <!-- End of Body -->
+   </div> <!-- End of Section -->
+
+    <div class="section">
+      <div class="head">
+        <h1 id="example">Example</h1>
+        <a href="#body" class="top" title="Back up to the top of the page" >Top</a>
+      </div>
+      <div class="body">
+        <p>
+        	The most basic Person resource description can describe an organization:
+        	<pre class="code">
+&lt;Spase>
+   &lt;Person>
+      &lt;ResourceID>spase://smwg/Person/SPASE.School&lt;/ResourceID>
+      &lt;OrganizationName>SPASE School&lt;/OrganizationName>
+   &lt;/Person>
+&lt;/Spase>
+        	</pre>
+         </p>
+        <p>
+        	A Person resource description for an actual person:
+        	<pre class="code">
+&lt;Person&gt;
+   &lt;ResourceID&gt;spase://SMWG/Person/Todd.A.King&lt;/ResourceID&gt;
+   &lt;ReleaseDate&gt;2010-08-05T17:35:47Z&lt;/ReleaseDate&gt;
+   &lt;PersonName&gt;Todd A. King&lt;/PersonName&gt;
+   &lt;OrganizationName&gt;
+      Institute of Geophysics and Planetary Physics, University of California, Los Angeles
+   &lt;/OrganizationName&gt;
+   &lt;Address&gt;
+      Institute of Geophysics and Planetary Physics, University of California Los Angeles, Box 951567, Los Angeles, CA 90095-1567
+   &lt;/Address&gt;
+   &lt;Email&gt;tking@igpp.ucla.edu&lt;/Email&gt;
+   &lt;PhoneNumber&gt;+1 310 206 7201&lt;/PhoneNumber&gt;
+&lt;/Person&gt;
+</pre>
+         </p>
+     </div> <!-- End of Body -->
+   </div> <!-- End of Section -->
+   
+    <div class="section">
+      <div class="head">
+        <h1 id="create">Create One</h1>
+        <a href="#body" class="top" title="Back up to the top of the page" >Top</a>
+      </div>
+      <div class="body">
+      	<p>
+      		Now create a resource description for yourself using the <a target="_blank" href="http://spase-group.org/tools/xmleditor/base/">SPASE XML editor</a>.
+      		For more information on creating Resource IDs check out the <a href="resourceid.html">Resource ID lesson</a>. 
+        <p>
+         </p>
+     </div> <!-- End of Body -->
+   </div> <!-- End of Section -->
+   
+  </div> <!-- End of POD -->
+</div> <!-- End of Content -->
+
+
+   
+   </div> <!-- end of page -->
+        <div id="footer">
+          <div class="controls">
+          </div>
+
+          <div class="copyright">
+            Space Physics Archive Search and Extract (SPASE)
+          </div>
+          <div class="licence">
+            SPASE is an open international consortium. Tools and examples are provided under individual licenses. 
+            Please refer to the individual license for how you can redistribute and/or modify source.
+          </div>
+        </div>
+    </div>
+    <div id="preload">  
+	  <span class="logo"></span>
+      <span class="tab"></span>
+      <span class="hide"></span>
+      <span class="show"></span>
+      <span class="arrow1"></span>
+      <span class="arrow2"></span>
+      <span class="ext"></span>
+      <span class="talk"></span>
+      <span class="menu"></span>
+      <span class="menu_head"></span>
+      <span class="menu_foot"></span>
+      <span class="top"></span>
+      <span class="dotminus1"></span>
+      <span class="dotminus2"></span>
+      <span class="dotplus1"></span>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+---
+tag: XML Schema
+title: SPASE - Schema
+---
+
+<div id="content">
+  <div class="section">
+    <div class="head">
+      <h1 id="contents" onclick="switch_section(this)">Contents</h1>
+    </div>
+    <div class="body">
+    	XML Schemas for:
+      <ul class="toc">
+        <li class=""><a href="#Metadata">Metadata Model</a></li>
+        <li class=""><a href="#Dictionary">Dictionary</a></li>
+      </ul>
+    </div>
+  </div>
+ 
+  <div class="pod">
+    <div class="section">
+      <div class="head">
+        <h1 id="Metadata">SPASE Metadata Model</h1>
+      </div>
+      <div class="body">
+<p>The SPASE ontology can be expressed in many forms. One of those forms is as an XML Schema.
+	An XML Schema expresses the constraints on the structure and content of an XML document.
+	Typically an XML Schema is stored in a file with an ".xsd" extension. 
+</p>
+<p>
+	When constructing an XML document the schema is referenced from the enclosing tag. 
+	For a SPASE document the enclosing tag has the form:
+<pre>
+&lt;Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+     xmlns="http://www.spase-group.org/data/schema" 
+     xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd"&gt;
+</pre>
+The "schemaLocation" maps the target namespace (in this case "http://www.spase-group.org/data/schema") to a schema document.
+There exists an XML Schema document for each version of the SPASE data model.
+</p>
+<p>
+	Formal documents can be found <a href="../model">here</a>. 
+    </div> <!-- End of Body -->
+   </div> <!-- End of Section -->
+
+    <div class="section">
+      <div class="head">
+        <h1 id="Dictionary">SPASE Dictionary</h1>
+      </div>
+      <div class="body">
+<p>
+Also available is the schema for the <a href="http://www.spase-group.org/data/search.jsp?style=xml">XML version</a> of the data dictionary.
+</p>
+	<p>
+		The recommended target namespace for use in XML documents is:
+<pre class="code">targetNamespace = http://www.spase-group.org/data/schema/spasedd</pre>
+</p>
+<p>
+	Formal documents can be found <a href="http://www.spase-group.org/docs/model/">here</a>. 
+</p>
+
+    </div> <!-- End of Body -->
+   </div> <!-- End of Section -->
+   
+  </div> <!-- End of POD -->
+</div> <!-- End of Content -->

@@ -1,0 +1,42 @@
+# =============================================
+# DEST CONFIG
+# =============================================
+
+root:              docs
+shoulder:			
+dest:              <%= site.root %>
+public:            <%= site.dest %>/public
+
+
+# =============================================
+# SOURCE CONFIG
+# =============================================
+
+# Data
+data:              data
+utils:             data/utils
+
+# Assets > fonts, icons, images etc.
+assets:            assets
+images:            <%= site.assets %>/images
+fonts:             <%= site.assets %>/fonts
+
+# Styles
+styles:            <%= site.assets %>/styles
+
+# Scripts
+scripts:           <%= site.assets %>/js
+
+# Content
+content:           content
+
+# Templates
+templates:         templates
+pages:             <%= site.templates %>/pages
+includes:          <%= site.templates %>/includes
+layouts:           <%= site.templates %>/layouts
+layoutext:         .hbs
+layout:            default
+
+
+helpers:           <%= site.templates %>/_helpers

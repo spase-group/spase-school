@@ -1,0 +1,93 @@
+---
+tag: You as a Resource
+title: SPASE Tutorial - You as a Resource
+---
+
+<div id="content">
+   <div class="section">
+    <div class="head">
+      <h1 id="contents" onclick="switch_section(this)">Contents</h1>
+    </div>
+    <div class="body">
+      <ul class="toc">
+        <li class=""><a href="#person">What is a Person Resource</a></li>
+        <li class=""><a href="#example">Example</a></li>
+        <li class=""><a href="#create">Create One for You</a></li>
+      </ul>
+     </div> <!-- End of Body -->
+   </div> <!-- End of Section -->
+ 
+  <div class="pod">
+    <div class="section">
+      <div class="head">
+        <h1 id="person">What is a Person Resource</h1>
+        <a href="#body" class="top" title="Back up to the top of the page" >Top</a>
+      </div>
+      <div class="body">
+        <p>
+           One of the simpliest resources to describe is a <a taget="_blank" href="http://spase-group.org/data/search.jsp?term=Person&style=entry">Person</a>. 
+           A <a target="_blank" href="http://spase-group.org/data/search.jsp?term=Person&style=entry">Person</a> resource can be
+           used to describe any individual or group of individuals. This includes an organization
+           such as a research group, institute or university.
+           The only required elements for a <a taget="_blank" href="http://spase-group.org/data/search.jsp?term=Person&style=entry">Person</a> 
+           resource are a resource ID and an organization name.
+           Often, other elements are included in order to provide a more complete description.
+         </p>
+     </div> <!-- End of Body -->
+   </div> <!-- End of Section -->
+
+    <div class="section">
+      <div class="head">
+        <h1 id="example">Example</h1>
+        <a href="#body" class="top" title="Back up to the top of the page" >Top</a>
+      </div>
+      <div class="body">
+        <p>
+        	The most basic Person resource description can describe an organization:
+        	<pre class="code">
+&lt;Spase>
+   &lt;Person>
+      &lt;ResourceID>spase://smwg/Person/SPASE.School&lt;/ResourceID>
+      &lt;OrganizationName>SPASE School&lt;/OrganizationName>
+   &lt;/Person>
+&lt;/Spase>
+        	</pre>
+         </p>
+        <p>
+        	A Person resource description for an actual person:
+        	<pre class="code">
+&lt;Person&gt;
+   &lt;ResourceID&gt;spase://SMWG/Person/Todd.A.King&lt;/ResourceID&gt;
+   &lt;ReleaseDate&gt;2010-08-05T17:35:47Z&lt;/ReleaseDate&gt;
+   &lt;PersonName&gt;Todd A. King&lt;/PersonName&gt;
+   &lt;OrganizationName&gt;
+      Institute of Geophysics and Planetary Physics, University of California, Los Angeles
+   &lt;/OrganizationName&gt;
+   &lt;Address&gt;
+      Institute of Geophysics and Planetary Physics, University of California Los Angeles, Box 951567, Los Angeles, CA 90095-1567
+   &lt;/Address&gt;
+   &lt;Email&gt;tking@igpp.ucla.edu&lt;/Email&gt;
+   &lt;PhoneNumber&gt;+1 310 206 7201&lt;/PhoneNumber&gt;
+&lt;/Person&gt;
+</pre>
+         </p>
+     </div> <!-- End of Body -->
+   </div> <!-- End of Section -->
+   
+    <div class="section">
+      <div class="head">
+        <h1 id="create">Create One</h1>
+        <a href="#body" class="top" title="Back up to the top of the page" >Top</a>
+      </div>
+      <div class="body">
+      	<p>
+      		Now create a resource description for yourself using the <a target="_blank" href="http://spase-group.org/tools/xmleditor/base/">SPASE XML editor</a>.
+      		For more information on creating Resource IDs check out the <a href="resourceid.html">Resource ID lesson</a>. 
+        <p>
+         </p>
+     </div> <!-- End of Body -->
+   </div> <!-- End of Section -->
+   
+  </div> <!-- End of POD -->
+</div> <!-- End of Content -->
+

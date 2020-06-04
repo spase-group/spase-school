@@ -1,0 +1,66 @@
+---
+tag: Validating a Description
+title: SPASE Tutorial - Validating a Description
+---
+
+<div id="content">
+   <div class="section">
+    <div class="head">
+      <h1 id="contents" onclick="switch_section(this)">Contents</h1>
+    </div>
+    <div class="body">
+      <ul class="toc">
+        <li class=""><a href="#person">Validation</a></li>
+        <li class=""><a href="#example">Example</a></li>
+      </ul>
+     </div> <!-- End of Body -->
+   </div> <!-- End of Section -->
+ 
+  <div class="pod">
+    <div class="section">
+      <div class="head">
+        <h1 id="person">Validation</h1>
+        <a href="#body" class="top" title="Back up to the top of the page" >Top</a>
+      </div>
+      <div class="body">
+        <p>
+           Validation of a resource description ensures that it complies to an instance
+           of the SPASE data model. While the SPASE data model is relatively stable, there
+           are new versions released from time-to-time. Each version has a prescribed set of
+           elements for each resource class.
+         </p>
+         <p>
+         	In addition to conforming to a specific version of SPASE data model, many a resource 
+         	descriptions contain references to other resources through resource identifiers and to
+         	stored resources using a URL. A full validation ensures the integrity of these references.
+         </p>
+         <p>
+         	SPASE provides both an <a target="_blank" href="http://spase-group.org/tools/validate">on-line</a>
+         validation tool and a command-line validation tool as part of 
+         the <a target="_blank" href="http://spase-group.org/tools/resource/">SPASE Resource Tools</a>.
+     </div> <!-- End of Body -->
+   </div> <!-- End of Section -->
+
+    <div class="section">
+      <div class="head">
+        <h1 id="example">Example</h1>
+        <a href="#body" class="top" title="Back up to the top of the page" >Top</a>
+      </div>
+      <div class="body">
+        <p>
+        	Using the Geotail Observatory as a resource description, the on-line validation tool can be used:
+      </p>
+      <p>
+        	<a target="_blank" href="http://spase-group.org/tools/validate/index.jsp?url=http://spase-group.org/registry/resolver?id=spase://SMWG/Observatory/Geotail&version=2.2.0&submit=Validate">
+        	Give it a try
+      </a>
+      </p>
+      <p>
+      The validator should report that it's valid.
+      </p>
+     </div> <!-- End of Body -->
+   </div> <!-- End of Section -->
+
+  </div> <!-- End of POD -->
+</div> <!-- End of Content -->
+
