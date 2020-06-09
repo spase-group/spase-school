@@ -58,14 +58,20 @@ module.exports = function(grunt) {
            files: [
 			   {
 				  expand: true,
-				  cwd: '<%= site.content %>', // 'Current Working Directory'
+				  cwd: '<%= site.content %>', // set 'Current Working Directory'
 				  src: '<%= site.assets %>/**', // Read everything inside the cwd
 				  dest: '<%= site.dest %>/', // Destination folder
 			   },
 			   {
 				  expand: true,
-				  cwd: '<%= site.content %>', // 'Current Working Directory'
+				  cwd: '<%= site.content %>', // set 'Current Working Directory'
 				  src: ['docs/**', '!docs/**/*.hbs'], // Read everything inside the cwd
+				  dest: '<%= site.dest %>/', // Destination folder
+			   },
+			   {
+				  expand: true,
+				  cwd: '<%= site.templates %>', // set 'Current Working Directory'
+				  src: 'CNAME', // Configure for Github pages
 				  dest: '<%= site.dest %>/', // Destination folder
 			   }
 		   ],
