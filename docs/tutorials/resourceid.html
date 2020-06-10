@@ -38,7 +38,9 @@
             </a>
 			-->
           </div>
-          <h1 class="headline">SPASE Tutorial - Creating a Resource ID</h1>
+		  <div class="headline">
+			<h1>SPASE Tutorial - Creating a Resource ID</h1>
+		  </div>
         </div>
         <div id="page">
 
@@ -90,7 +92,6 @@
     <div class="section">
       <div class="head">
         <h1 id="resource">Creating a Resource ID</h1>
-        <a href="#body" class="top" title="Back up to the top of the page" >Top</a>
       </div>
       <div class="body">
         <p>
@@ -104,7 +105,7 @@ spase://NamingAuthority/ResourceType/Path
 </pre>
          where "spase://" is always present. The "NamingAuthority" is the name assigned to the curator of the resource. 
          A list current naming authorities can be found at <a target="_blank" href="http://spase-group.org/services/#naming-authorty">
-         http://spase-group.org/services/#naming-authorty</a>. The "ResourceType" is the name for the
+         http://spase-group.org/services/#naming-authorty<span class="tutor">View the list of naming authorities.</span></a>. The "ResourceType" is the name for the
          type of resource which the identifier is assigned. The "Path" portion is any string which will make the identifier
          unique. Each resource class (conceptual, digital and physical) has a slightly different convention on the formation of the "path"
          portion of identifier.
@@ -116,7 +117,6 @@ spase://NamingAuthority/ResourceType/Path
     <div class="section">
       <div class="head">
         <h1 id="conventions">Resource ID Conventions</h1>
-        <a href="#body" class="top" title="Back up to the top of the page" >Top</a>
       </div>
       <div class="body">
         <p>
@@ -124,7 +124,7 @@ spase://NamingAuthority/ResourceType/Path
            This is enabled by having naming authorities control the formation of fully defined resource identifiers.
            So that there is some uniformity in the creation of resource identifiers adopting a set of conventions is recommended.
            (For more details see <a target="_blank" href="http://spase-group.org/docs/conventions/Resource-ID-Formation-Rule-v4.pdf">
-           	http://spase-group.org/docs/conventions/Resource-ID-Formation-Rule-v4.pdf</a>
+           	http://spase-group.org/docs/conventions/Resource-ID-Formation-Rule-v4.pdf<span class="tutor">View the conventions for creating a Resource ID.</span></a>
         </p>
      </div> <!-- End of Body -->
    </div> <!-- End of Section -->
@@ -132,14 +132,12 @@ spase://NamingAuthority/ResourceType/Path
     <div class="section">
       <div class="head">
         <h1 id="create">Create an Resource ID</h1>
-        <a href="#body" class="top" title="Back up to the top of the page" >Top</a>
       </div>
       <div class="body">
       	<p>
-      		Try creating a resource ID. Make some selections in the form below and 
-      		a conforming resource ID will appear in the box.
+      		Try creating a resource ID. Make some selections in the form available <a href="http://spase-group.org/tools/idmaker/"><span class="tutor">Create a resource ID using a simple tool.</span>here.</a>
       	</p>
-<%@ include file="idmaker.jsp" %>
+
      </div> <!-- End of Body -->
    </div> <!-- End of Section -->
 

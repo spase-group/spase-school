@@ -193,6 +193,17 @@ function setTutor() {
    	}
    }
    
+   // Table of contents 
+   t = document.getElementsByClassName('toc');
+   for (j=0;j<t.length;j++) {
+	   x = t[j].getElementsByTagName('a');
+	   for (i=0;i<x.length;i++) {
+		 // Set-up behaivor
+		 x[i].onmouseover = new Function('showTutorText("Jump to \\"' + x[i].innerHTML + '\\" section.")');
+		 x[i].onmouseout = new Function('hideTutor()');
+	   }
+   }
+   
    // Section Headings 
    x = document.getElementsByTagName('h1');
    for (i=0;i<x.length;i++) {
@@ -209,7 +220,9 @@ function setTutor() {
             a.className = 'top';
             a.title = 'Back up to the top of the page';
             a.innerHTML = 'Top';
-            x[i].appendChild(a);
+			a.onmouseover = new Function('showTutorText("Jump to the top of the page.")');
+			a.onmouseout = new Function('hideTutor()');
+            x[i].after(a);
          }
       }
    }
@@ -228,7 +241,9 @@ function setTutor() {
          a.className = 'top';
          a.title = 'Back up to the top of the page';
          a.innerHTML = 'Top';
-         x[i].appendChild(a);
+		 a.onmouseover = new Function('showTutorText("Jump to the top of the page.")');
+ 		 a.onmouseout = new Function('hideTutor()');
+         x[i].after(a);
       }
    }
    
