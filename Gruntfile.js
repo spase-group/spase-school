@@ -18,6 +18,11 @@
 module.exports = function(grunt) {
   'use strict';
 
+  // Load the Assemble plugin.
+  grunt.loadNpmTasks('assemble');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+
   grunt.initConfig({
 
     // Metadata
@@ -83,11 +88,6 @@ module.exports = function(grunt) {
 	clean: ['<%= site.dest %>/**']
 	
   });
-
-  // Load the Assemble plugin.
-  grunt.loadNpmTasks('assemble');
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-copy');
 
   // The default task to run with the `grunt` command.
   grunt.registerTask('default', ['clean', 'copy', 'assemble']);
