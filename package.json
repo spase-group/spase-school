@@ -30,8 +30,8 @@
   },
   "devDependencies": {
     "assemble-contrib-permalinks": "~0.3.6",
-    "grunt": "~0.4.3",
-    "assemble": "~0.4.37",
+    "grunt": "~1.5.3",
+    "assemble": "~0.24.3",
     "relative": "~0.1.2",
     "lodash": "~2.4.1"
   },
