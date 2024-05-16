@@ -25,15 +25,16 @@
     "node": ">= 0.8.0"
   },
   "dependencies": {
+    "grunt-assemble": "^0.6.3",
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-copy": "^1.0.0"
   },
   "devDependencies": {
-    "assemble-contrib-permalinks": "~0.3.6",
-    "grunt": "~0.4.3",
     "assemble": "~0.4.37",
-    "relative": "~0.1.2",
-    "lodash": "~2.4.1"
+    "assemble-contrib-permalinks": "~0.3.6",
+    "grunt": "^0.4.5",
+    "lodash": "~2.4.1",
+    "relative": "~0.1.2"
   },
   "keywords": []
 }
